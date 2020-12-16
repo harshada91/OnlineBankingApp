@@ -1,0 +1,112 @@
+
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login page</title>
+
+<style>
+    .fixed-footer{
+		width: 100%;
+        position: fixed;        
+        background: #333;
+        padding: 10px 0;
+        color: #fff;
+    text-align: center;
+        bottom: 0;
+    } 
+    ul {
+  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: rgba(255, 255, 255, 0.822);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(122, 120, 120);
+}
+.footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    color: white;
+    text-align: center;
+  background-color: #998c8c;
+  padding: 10px;
+  text-align: center;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+   * {
+        box-sizing:border-box;
+        margin: 0;
+
+    }
+
+input[type=text], input[type=password] {
+  width: 25%;
+  padding: 10px 20px;
+  margin: 10px 10px;
+  display: inline-block;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 26px;
+}
+
+.login{
+  float:left;
+  width: 10%
+ ;
+
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+
+    
+</style>
+</head>
+<body>
+
+    <ul>
+        <li><a class="active" href="index.html" target="">MyBank</a></li>  
+         <li ><a href="About.html">About</a></li>
+        
+      </ul>
+	<h1 style="margin-left: 10%; margin-top: 100px; margin-bottom: 34px;">customer Login</h1>
+	<div style="width: 100%; margin-left: 50;">
+		<form Action="login" Method="POST"> 
+			<label for="name" style="margin-left: 12px;">Username</label>
+			<input type="text" placeholder="username" name="username" style="background-color:rgb(207,180,207);">
+			<br>
+			<label for="Password" style="margin-left: 12px;">Password</label>
+			<input type="password" placeholder="password" name="password" style="background-color: rgb(207, 180, 207);" >
+			<br>
+			
+			<button type="submit" class="login" style="margin-left: 10%; margin-top: 1%;">Login</button>
+		</form>
+	</div>
+
+
+</body>
+</html>

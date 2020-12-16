@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>NewAccount</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        .fixed-footer{
+            width: 100%;
+            position: fixed;        
+            background: #333;
+            padding: 10px 0;
+            color: #fff;
+        text-align: center;
+            bottom: 0;
+        } 
+        ul {
+      
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    li {
+      float: left;
+      border-right:1px solid #bbb;
+    }
+    
+    li:last-child {
+      border-right: none;
+    }
+    
+    li a {
+      display: block;
+      color: rgba(255, 255, 255, 0.822);
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover:not(.active) {
+      background-color: rgb(122, 120, 120);
+    }
+    .footer {
+        position: static;
+        left: 0;
+        bottom: 0;
+        color: white;
+        text-align: center;
+      background-color: #998c8c;
+      padding: 10px;
+      text-align: center;
+    }
+    body {font-family: Arial, Helvetica, sans-serif;}
+       * {
+            box-sizing:border-box;
+            margin: 0;
+    
+        }
+    
+    input[type=text], input[type=password] {
+      width: 25%;
+      padding: 10px 20px;
+      margin: 10px 10px;
+      display: inline-block;
+      border: 2px solid #ccc;
+      box-sizing: border-box;
+      margin-top: 26px;
+    }
+    
+    
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    button:hover {
+      opacity: 0.8;
+    }
+    
+</style>
+<body style="background-color: #fff4f4;">
+    <ul>
+        <li><a class="active" href="index.html" target="">MyBank</a></li>
+        <li style="float: right;"><a href="login.html">CustomerLogin</a></li>
+        <li><a href="contact.html">Contact</a></li>     
+       <li ><a href="About.html">About</a></li>
+        
+      </ul>
+<br>
+<br>
+<hr>
+<header style="margin-left: 25%; margin-top: 2%;">
+    <b>
+        Fill the details below to Create Account
+    </b>
+</header>
+<div>
+    <form action="CustomerRegistration" method="POST" style="margin-top: 0%;">
+       <input type="text" name="Id" placeholder="AccountNumber" style="margin-left: 10%; margin-top: 1%; width: 45%; padding-left: 1%;">
+       <input type="text" name="Name" placeholder="Name" style="margin-left: 10%; margin-top: 1%; width: 45%; padding-left: 1%;">
+       <input type="text" name="UserName" placeholder="UserName" style="margin-left: 10%; margin-top: 1%; width: 45%; padding-left: 1%;">
+       <input type="password" name="Password1" placeholder="Password" style="margin-left: 10%; margin-top: 1%; width: 45%; padding-left: 1%;">
+       <input type="password" name="Password2" placeholder="Confirm Password" style="margin-left: 10%; margin-top: 1%; width: 45%; padding-left: 1%;">
+       <input type="email" name="email" placeholder="Email" style="margin-left: 10%; margin-top: 1%; width: 45%; padding-left: 1%;">
+       <input type="text" name="Ammount" placeholder="Ammount" style="margin-left: 10%; margin-top: 1%; width: 45%; padding-left: 1%;">
+       <input type="text" name="Address" placeholder="Address" style="margin-left: 10%; margin-top: 1%; width: 45%; padding-left: 1%;">
+       <input type="text" name="mobile" placeholder="Mobile Number" style="margin-left: 10%; margin-top: 1%; width: 45%; padding-left: 1%;">
+<br>
+<input type="submit" value="submit" style="margin-left: 120px; margin-top: 25px; margin-bottom: 10%; height: 50px; background-color: aliceblue; border-radius: 0%; width: 16%;" >
+
+</form>
+</div>
+<div class="fixed-footer">
+	<div class="container">Copyright &copy; 2020 MyBank</div>        
+</div>
+
+</body>
+</html>
